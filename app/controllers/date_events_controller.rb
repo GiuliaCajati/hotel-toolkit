@@ -1,0 +1,4 @@
+class DateEventsController < ApplicationController
+
+
+end
