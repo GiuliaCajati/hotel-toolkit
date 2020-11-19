@@ -1,3 +1,5 @@
+
 class DateInfo < ApplicationRecord
-    belongs_to :the_date 
+    has_many :date_events 
+    has_many :events, through: :date_events
 end

@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2020_11_17_233624) do
   enable_extension "plpgsql"
 
   create_table "date_events", force: :cascade do |t|
-    t.integer "the_date_id"
+    t.integer "date_info_id"
     t.integer "event_id"
     t.boolean "arrival"
     t.boolean "main_event"
@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(version: 2020_11_17_233624) do
   end
 
   create_table "date_infos", force: :cascade do |t|
-    t.integer "the_date_id"
+    t.string "date"
     t.integer "arrivals"
     t.integer "departures"
     t.string "performance_YTD"
@@ -71,12 +71,6 @@ ActiveRecord::Schema.define(version: 2020_11_17_233624) do
     t.string "start_date"
     t.integer "points"
     t.integer "department_id"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "the_dates", force: :cascade do |t|
-    t.string "date"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

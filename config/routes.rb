@@ -2,7 +2,6 @@ Rails.application.routes.draw do
   resources :date_infos
   resources :tasks
   resources :date_events
-  resources :the_dates
   resources :events
   resources :departments
   resources :team_members, only: [:create]

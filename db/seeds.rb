@@ -12,8 +12,82 @@ Task.destroy_all
 Department.destroy_all
 TeamMember.destroy_all 
 Event.destroy_all
-TheDate.destroy_all
 
+
+###############DateInfo#############
+
+augfith = DateInfo.create(
+    date: "08/05/19",
+    arrivals: 180,
+    departures: 250,
+    performance_YTD: "95%",
+    occupancy: "80%",
+    rate: "$450"
+)
+
+augsix = DateInfo.create(
+    date: "08/06/19",
+    arrivals: 180,
+    departures: 250,
+    performance_YTD: "95%",
+    occupancy: "80%",
+    rate: "$450"
+)
+
+augseven = DateInfo.create(
+    date: "08/07/19",
+    arrivals: 180,
+    departures: 250,
+    performance_YTD: "95%",
+    occupancy: "80%",
+    rate: "$450"
+)
+
+augeight = DateInfo.create(
+    date: "08/08/19",
+    arrivals: 180,
+    departures: 250,
+    performance_YTD: "95%",
+    occupancy: "80%",
+    rate: "$450"
+)
+
+
+augnine = DateInfo.create(
+    date: "08/09/19",
+    arrivals: 180,
+    departures: 250,
+    performance_YTD: "95%",
+    occupancy: "80%",
+    rate: "$450"
+)
+
+augten = DateInfo.create(
+    date: "08/10/19",
+    arrivals: 180,
+    departures: 250,
+    performance_YTD: "95%",
+    occupancy: "80%",
+    rate: "$450"
+)
+
+augseleven = DateInfo.create(
+    date: "08/11/19",
+    arrivals: 180,
+    departures: 250,
+    performance_YTD: "95%",
+    occupancy: "80%",
+    rate: "$450"
+)
+
+augtwelve = DateInfo.create(
+    date: "08/12/19",
+    arrivals: 180,
+    departures: 250,
+    performance_YTD: "95%",
+    occupancy: "80%",
+    rate: "$450"
+)
 
 
 ###############Departments#############
@@ -79,37 +153,10 @@ birthday = Event.create(
     importance: "Highly"
 )
 
-###############TheDates#############
-augfith = TheDate.create(
-   date: "08/05/19" 
-)
-augsix = TheDate.create(
-    date: "08/06/19" 
- )
-augseven = TheDate.create(
-    date: "08/07/19" 
- )
-augeight = TheDate.create(
-    date: "08/08/19" 
- )
-
-augnine = TheDate.create(
-date: "08/09/19" 
-)
-augten = TheDate.create(
-    date: "08/10/19" 
-)
-augseleven = TheDate.create(
-    date: "08/11/19" 
-)
-augtwelve = TheDate.create(
-    date: "08/12/19" 
-)
-
 ###############DateEvent#############
 
 comaugfith = DateEvent.create(
-    the_date_id: augfith.id,
+    date_info_id: augfith.id,
     event_id: comic_con.id,
     arrival: true,
     main_event: false,
@@ -117,7 +164,7 @@ comaugfith = DateEvent.create(
 )
 
 comaugsix = DateEvent.create(
-    the_date_id: augsix.id,
+    date_info_id: augsix.id,
     event_id: comic_con.id,
     arrival: false,
     main_event: true,
@@ -125,7 +172,7 @@ comaugsix = DateEvent.create(
 )
 
 comaugseven = DateEvent.create(
-    the_date_id: augseven.id,
+    date_info_id: augseven.id,
     event_id: comic_con.id,
     arrival: false,
     main_event: true,
@@ -133,7 +180,7 @@ comaugseven = DateEvent.create(
 )
 
 comaugeight = DateEvent.create(
-    the_date_id: augeight.id,
+    date_info_id: augeight.id,
     event_id: comic_con.id,
     arrival: false,
     main_event: false,
@@ -141,7 +188,7 @@ comaugeight = DateEvent.create(
 )
 
 bbaugeight = DateEvent.create(
-    the_date_id: augeight.id,
+    date_info_id: augeight.id,
     event_id: birthday.id,
     arrival: false,
     main_event: false,
@@ -149,7 +196,7 @@ bbaugeight = DateEvent.create(
 )
 
 bbaugnine = DateEvent.create(
-    the_date_id: augnine.id,
+    date_info_id: augnine.id,
     event_id: birthday.id,
     arrival: false,
     main_event: false,
@@ -157,7 +204,7 @@ bbaugnine = DateEvent.create(
 )
 
 bbaugten = DateEvent.create(
-    the_date_id: augten.id,
+    date_info_id: augten.id,
     event_id: birthday.id,
     arrival: false,
     main_event: false,
@@ -165,7 +212,7 @@ bbaugten = DateEvent.create(
 )
 
 bbaugtwelve = DateEvent.create(
-    the_date_id: augtwelve.id,
+    date_info_id: augtwelve.id,
     event_id: birthday.id,
     arrival: false,
     main_event: false,
@@ -196,18 +243,8 @@ tasktwo = Task.create(
 )
 
 
-###############DateInfo#############
 
 
-augeightinfo = DateInfo.create(
-    the_date_id: augeight.id,
-    arrivals: 180,
-    departures: 250,
-    performance_YTD: "95%",
-    occupancy: "80%",
-    rate: "$450"
-)
-   
 
 
 
