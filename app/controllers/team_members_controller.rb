@@ -1,5 +1,16 @@
 class TeamMembersController < ApplicationController
     #before_action :authorized, only: [:auto_login]
+    def login 
+        @team_member = TeamMember.find_by(name: params[:name])
+        if @team_member && @team_member.authenticate(params[:password])
+            #upon success... render json response  
+            render json: @team_member.to_json(include: [:department, :tasks])
+          else          
+            #upon failure... render json response 
+            render json: { message: "This user is not authenticated" }
+        end  
+    end
+
 
     def index 
       @team_members = TeamMember.all
@@ -13,8 +24,7 @@ class TeamMembersController < ApplicationController
 
     def create
       #create user account 
-      @team_member = TeamMember.new(name: params[:team_member][:name], password_digest: params[:password], access: params[:team_member][:access], birthday: params[:team_member][:birthday],
-        ,start_date: params[:team_member][:start_date], points: params[:team_member][:points],department_id: params[:team_member][:department_id]) 
+      @team_member = TeamMember.new(name: params[:team_member][:name], password_digest: params[:password], access: params[:team_member][:access], birthday: params[:team_member][:birthday], start_date: params[:team_member][:start_date], points: params[:team_member][:points],department_id: params[:team_member][:department_id]) 
       # many need to change it from [:user][:pasword] to just [:password] 
       if @user.save 
           #upon success... render json response 
@@ -25,16 +35,7 @@ class TeamMembersController < ApplicationController
       end
     end 
 
-    def login 
-        @team_member = TeamMember.find_by(name: params[:team_member][:name])
-        if @team_member.password_digest == params[:password]
-            #upon success... render json response  
-            render json: @team_member.to_json(include: [:department, :tasks])
-        else
-            #upon failure... render json response 
-            render json: { message: "This user is not authenticated" }
-        end  
-    end
+  
 
     # t.string "name"
     # t.string "password_digest"
