@@ -155,68 +155,71 @@ birthday = Event.create(
 
 ###############DateEvent#############
 
+
+
+
 comaugfith = DateEvent.create(
     date_info_id: augfith.id,
     event_id: comic_con.id,
-    arrival: true,
-    main_event: false,
-    departure: false
+    arrivals: 1000,
+    in_house: 2,
+    departures: 0
 )
 
 comaugsix = DateEvent.create(
     date_info_id: augsix.id,
     event_id: comic_con.id,
-    arrival: false,
-    main_event: true,
-    departure: false
+    arrivals: 200,
+    in_house: 1002,
+    departures: 0
 )
 
 comaugseven = DateEvent.create(
     date_info_id: augseven.id,
     event_id: comic_con.id,
-    arrival: false,
-    main_event: true,
-    departure: false
+    arrivals: 0,
+    in_house: 1202,
+    departures: 0
 )
 
 comaugeight = DateEvent.create(
     date_info_id: augeight.id,
     event_id: comic_con.id,
-    arrival: false,
-    main_event: false,
-    departure: true
+    arrivals: 0,
+    in_house: 1200,
+    departures: 2
 )
 
 bbaugeight = DateEvent.create(
     date_info_id: augeight.id,
     event_id: birthday.id,
-    arrival: false,
-    main_event: false,
-    departure: true
+    arrivals: 0,
+    in_house: 950,
+    departures: 250
 )
 
 bbaugnine = DateEvent.create(
     date_info_id: augnine.id,
     event_id: birthday.id,
-    arrival: false,
-    main_event: false,
-    departure: true
+    arrivals: 0,
+    in_house: 710,
+    departures: 240
 )
 
 bbaugten = DateEvent.create(
     date_info_id: augten.id,
     event_id: birthday.id,
-    arrival: false,
-    main_event: false,
-    departure: true
+    arrivals: 0,
+    in_house: 10,
+    departures: 600
 )
 
 bbaugtwelve = DateEvent.create(
     date_info_id: augtwelve.id,
     event_id: birthday.id,
-    arrival: false,
-    main_event: false,
-    departure: true
+    arrivals: 0,
+    in_house: 0,
+    departures: 10
 )
 ###############Task#############
 

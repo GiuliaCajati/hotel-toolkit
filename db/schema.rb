@@ -18,9 +18,9 @@ ActiveRecord::Schema.define(version: 2020_11_17_233624) do
   create_table "date_events", force: :cascade do |t|
     t.integer "date_info_id"
     t.integer "event_id"
-    t.boolean "arrival"
-    t.boolean "main_event"
-    t.boolean "departure"
+    t.integer "arrivals"
+    t.integer "in_house"
+    t.integer "departures"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
