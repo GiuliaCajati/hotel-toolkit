@@ -17,7 +17,7 @@ Event.destroy_all
 ###############DateInfo#############
 
 augfith = DateInfo.create(
-    date: "08/05/19",
+    date: "2019-05-08",
     arrivals: 180,
     departures: 250,
     performance_YTD: "95%",
@@ -26,7 +26,7 @@ augfith = DateInfo.create(
 )
 
 augsix = DateInfo.create(
-    date: "08/06/19",
+    date: "2019-06-08",
     arrivals: 180,
     departures: 250,
     performance_YTD: "95%",
@@ -35,7 +35,7 @@ augsix = DateInfo.create(
 )
 
 augseven = DateInfo.create(
-    date: "08/07/19",
+    date: "2019-07-08",
     arrivals: 180,
     departures: 250,
     performance_YTD: "95%",
@@ -44,7 +44,7 @@ augseven = DateInfo.create(
 )
 
 augeight = DateInfo.create(
-    date: "08/08/19",
+    date: "2019-08-08",
     arrivals: 180,
     departures: 250,
     performance_YTD: "95%",
@@ -54,7 +54,7 @@ augeight = DateInfo.create(
 
 
 augnine = DateInfo.create(
-    date: "08/09/19",
+    date: "2019-09-08",
     arrivals: 180,
     departures: 250,
     performance_YTD: "95%",
@@ -63,7 +63,7 @@ augnine = DateInfo.create(
 )
 
 augten = DateInfo.create(
-    date: "08/10/19",
+    date: "2019-10-08",
     arrivals: 180,
     departures: 250,
     performance_YTD: "95%",
@@ -72,7 +72,7 @@ augten = DateInfo.create(
 )
 
 augseleven = DateInfo.create(
-    date: "08/11/19",
+    date: "2019-11-08",
     arrivals: 180,
     departures: 250,
     performance_YTD: "95%",
@@ -81,7 +81,7 @@ augseleven = DateInfo.create(
 )
 
 augtwelve = DateInfo.create(
-    date: "08/12/19",
+    date: "2019-12-08",
     arrivals: 180,
     departures: 250,
     performance_YTD: "95%",
@@ -123,8 +123,8 @@ bob = TeamMember.create(
     name: "Bob",
     password: "123",
 	access: "Executive",
-	birthday: "01/10/1990",
-    start_date: "02/15/2018",
+	birthday: "1990-10-10",
+    start_date: "2008-7-2",
     points: 0,
     department_id: front_office.id
 ) 
@@ -133,8 +133,8 @@ sally = TeamMember.create(
     name: "Sally",
     password: "123",
 	access: "Executive",
-	birthday: "05/23/1988",
-    start_date: "01/02/2017",
+	birthday: "1988-10-3",
+    start_date: "2007-10-3",
     points: 0,
     department_id: hr.id
 ) 

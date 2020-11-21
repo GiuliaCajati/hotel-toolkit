@@ -24,11 +24,10 @@ class TeamMembersController < ApplicationController
 
     def create
       #create user account 
-      @team_member = TeamMember.new(name: params[:team_member][:name], password_digest: params[:password], access: params[:team_member][:access], birthday: params[:team_member][:birthday], start_date: params[:team_member][:start_date], points: params[:team_member][:points],department_id: params[:team_member][:department_id]) 
-      # many need to change it from [:user][:pasword] to just [:password] 
-      if @user.save 
+      @team_member = TeamMember.new(name: params[:name], password_digest: params[:password], access: params[:access], birthday: params[:birthday], start_date: params[:start_date], points: params[:points],department_id: params[:department_id]) 
+      if @team_member.save 
           #upon success... render json response 
-          render json: @user.to_json(include: [:department, :tasks])
+          render json: @team_member.to_json(include: [:department, :tasks])
       else 
           #upon failure... render json response 
           render json: {message: "This user is not authenticated"}
