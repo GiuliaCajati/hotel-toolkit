@@ -6,7 +6,7 @@ class CreateTasks < ActiveRecord::Migration[6.0]
       t.integer :team_member_id
       t.boolean :certificate
       t.boolean :project
-      t.string :dealdine
+      t.integer :date_info_id
       t.integer :status
       t.string :details
 

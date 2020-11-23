@@ -245,6 +245,40 @@ tasktwo = Task.create(
     details: "Make sure Beyonce has the Grand Suite..."
 )
 
+# certificate
+taskthree = Task.create(
+    #department_id: front_office.id,
+    #event_id: birthday.id, 
+    team_member_id: bob.id, # for certificate or project
+    certificate: true,
+    project: false,
+    date_info_id: augfith.id, # for certificate or project
+    status: 0, # for certificate or project
+    details: "Forbes Certificate"
+)
+
+taskfour = Task.create(
+    #department_id: front_office.id,
+    #event_id: birthday.id, 
+    team_member_id: bob.id, # for certificate or project
+    certificate: true,
+    project: false,
+    date_info_id: augfith.id, # for certificate or project
+    status: 0, # for certificate or project
+    details: "Project Management"
+)
+
+taskfour = Task.create(
+    #department_id: front_office.id,
+    #event_id: birthday.id, 
+    team_member_id: bob.id, # for certificate or project
+    certificate: false,
+    project: true,
+    date_info_id: augfith.id, # for certificate or project
+    status: 0, # for certificate or project
+    details: "Increasing Guest Arrival Experience"
+)
+
 
 
 

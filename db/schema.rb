@@ -56,7 +56,7 @@ ActiveRecord::Schema.define(version: 2020_11_17_233624) do
     t.integer "team_member_id"
     t.boolean "certificate"
     t.boolean "project"
-    t.string "dealdine"
+    t.integer "date_info_id"
     t.integer "status"
     t.string "details"
     t.datetime "created_at", precision: 6, null: false
