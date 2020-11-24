@@ -19,46 +19,46 @@ Event.destroy_all
 augfith = DateInfo.create(
     date: "2019-05-08",
     arrivals: 180,
-    departures: 250,
+    departures: 155,
     performance_YTD: "95%",
-    occupancy: "80%",
+    occupancy: "83%",
     rate: "$450"
 )
 
 augsix = DateInfo.create(
     date: "2019-06-08",
     arrivals: 180,
-    departures: 250,
+    departures: 110,
     performance_YTD: "95%",
-    occupancy: "80%",
+    occupancy: "85%",
     rate: "$450"
 )
 
 augseven = DateInfo.create(
     date: "2019-07-08",
-    arrivals: 180,
+    arrivals: 400,
     departures: 250,
     performance_YTD: "95%",
-    occupancy: "80%",
+    occupancy: "99%",
     rate: "$450"
 )
 
 augeight = DateInfo.create(
     date: "2019-08-08",
     arrivals: 180,
-    departures: 250,
+    departures: 400,
     performance_YTD: "95%",
-    occupancy: "80%",
+    occupancy: "78%",
     rate: "$450"
 )
 
 
 augnine = DateInfo.create(
     date: "2019-09-08",
-    arrivals: 180,
+    arrivals: 780,
     departures: 250,
     performance_YTD: "95%",
-    occupancy: "80%",
+    occupancy: "97%",
     rate: "$450"
 )
 
@@ -77,7 +77,7 @@ augseleven = DateInfo.create(
     departures: 250,
     performance_YTD: "95%",
     occupancy: "80%",
-    rate: "$450"
+    rate: "$550"
 )
 
 augtwelve = DateInfo.create(
@@ -86,7 +86,25 @@ augtwelve = DateInfo.create(
     departures: 250,
     performance_YTD: "95%",
     occupancy: "80%",
-    rate: "$450"
+    rate: "$550"
+)
+
+augthirteen = DateInfo.create(
+    date: "2019-13-08",
+    arrivals: 500,
+    departures: 250,
+    performance_YTD: "95%",
+    occupancy: "90%",
+    rate: "$550"
+)
+
+augfourteen = DateInfo.create(
+    date: "2019-14-08",
+    arrivals: 500,
+    departures: 250,
+    performance_YTD: "95%",
+    occupancy: "90%",
+    rate: "$550"
 )
 
 
@@ -154,8 +172,6 @@ birthday = Event.create(
 )
 
 ###############DateEvent#############
-
-
 
 
 comaugfith = DateEvent.create(
