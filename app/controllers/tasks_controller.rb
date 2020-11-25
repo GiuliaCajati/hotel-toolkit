@@ -11,7 +11,7 @@ class TasksController < ApplicationController
     end
 
     def create
-        @task = Task.create(department_id: params[:department_id], event_id: params[:event_id], certificate: params[:certificate], project: params[:project], details: params[:details])
+        @task = Task.create(department_id: params[:department_id], event_id: params[:event_id], certificate: params[:certificate], project: params[:project],guest_follow_up: params[:guest_follow_up], details: params[:details])
         render json: @task.to_json(include: [:event, :department, :team_member]) 
     end 
 end

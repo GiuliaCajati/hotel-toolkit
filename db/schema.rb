@@ -56,6 +56,7 @@ ActiveRecord::Schema.define(version: 2020_11_24_015647) do
     t.integer "team_member_id"
     t.boolean "certificate"
     t.boolean "project"
+    t.boolean "guest_follow_up"
     t.integer "date_info_id"
     t.integer "status"
     t.string "details"

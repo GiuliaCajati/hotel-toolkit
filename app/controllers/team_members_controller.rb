@@ -4,22 +4,23 @@ class TeamMembersController < ApplicationController
         @team_member = TeamMember.find_by(name: params[:name])
         if @team_member && @team_member.authenticate(params[:password])
             #upon success... render json response  
-            render json: @team_member.to_json(include: [:department, :tasks])
+            render json: @team_member.to_json(include: {department: {include: {tasks: {include:[:event]}}}, tasks: {}})
           else          
             #upon failure... render json response 
             render json: { message: "This user is not authenticated" }
         end  
     end
 
+    
 
     def index 
       @team_members = TeamMember.all
-      render json: @team_members.to_json(include: [:department, :tasks])
+      render json: @team_members.to_json(include: {department: {include: {tasks: {include:[:event]}}}, tasks: {}})
     end 
 
     def show 
       @team_member = TeamMember.find(params[:id])
-      render json: @team_member.to_json(include: [:department, :tasks])
+      render json: @team_member.to_json(include: {department: {include: {tasks: {include:[:event]}}}, tasks: {}})
     end 
 
     def create
@@ -27,7 +28,7 @@ class TeamMembersController < ApplicationController
       @team_member = TeamMember.new(name: params[:name], password_digest: params[:password], access: params[:access], birthday: params[:birthday], start_date: params[:start_date], points: params[:points],department_id: params[:department_id]) 
       if @team_member.save 
           #upon success... render json response 
-          render json: @team_member.to_json(include: [:department, :tasks])
+          render json: @team_member.to_json(include: {department: {include: {tasks: {include: [:event]}}}, tasks: {}})
       else 
           #upon failure... render json response 
           render json: {message: "This user is not authenticated"}
