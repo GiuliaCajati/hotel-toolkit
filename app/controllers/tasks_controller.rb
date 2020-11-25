@@ -9,4 +9,9 @@ class TasksController < ApplicationController
         @task = Task.find(params[:id])
         render json: @task.to_json(include: [:event, :department, :team_member]) 
     end
+
+    def create
+        @task = Task.create(department_id: params[:department_id], event_id: params[:event_id], certificate: params[:certificate], project: params[:project], details: params[:details])
+        render json: @task.to_json(include: [:event, :department, :team_member]) 
+    end 
 end

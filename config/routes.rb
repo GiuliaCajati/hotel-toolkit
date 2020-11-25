@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :vips
+  resources :vip_dates
   resources :date_infos
   resources :tasks
   resources :date_events

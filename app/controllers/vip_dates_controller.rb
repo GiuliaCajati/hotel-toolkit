@@ -1,0 +1,2 @@
+class VipDatesController < ApplicationController
+end
