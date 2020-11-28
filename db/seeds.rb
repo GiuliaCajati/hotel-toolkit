@@ -18,7 +18,7 @@ Vip.destroy_all
 ###############DateInfo#############
 
 augfith = DateInfo.create(
-    date: "2019-05-08",
+    date: "2020-11-05",
     arrivals: 180,
     departures: 155,
     performance_YTD: "95% 😊",
@@ -27,7 +27,7 @@ augfith = DateInfo.create(
 )
 
 augsix = DateInfo.create(
-    date: "2019-06-08",
+    date: "2020-11-06",
     arrivals: 180,
     departures: 110,
     performance_YTD: "95% 😊",
@@ -36,7 +36,7 @@ augsix = DateInfo.create(
 )
 
 augseven = DateInfo.create(
-    date: "2019-07-08",
+    date: "2020-11-07",
     arrivals: 400,
     departures: 250,
     performance_YTD: "95% 😊",
@@ -45,7 +45,7 @@ augseven = DateInfo.create(
 )
 
 augeight = DateInfo.create(
-    date: "2019-08-08",
+    date: "2020-11-09",
     arrivals: 180,
     departures: 400,
     performance_YTD: "95% 😊",
@@ -55,7 +55,7 @@ augeight = DateInfo.create(
 
 
 augnine = DateInfo.create(
-    date: "2019-09-08",
+    date: "2020-11-10",
     arrivals: 780,
     departures: 250,
     performance_YTD: "95% 😊",
@@ -64,7 +64,7 @@ augnine = DateInfo.create(
 )
 
 augten = DateInfo.create(
-    date: "2019-10-08",
+    date: "2020-11-11",
     arrivals: 180,
     departures: 250,
     performance_YTD: "95% 😊",
@@ -73,7 +73,7 @@ augten = DateInfo.create(
 )
 
 augseleven = DateInfo.create(
-    date: "2019-11-08",
+    date: "2020-11-12",
     arrivals: 180,
     departures: 250,
     performance_YTD: "95% 😊",
@@ -82,7 +82,7 @@ augseleven = DateInfo.create(
 )
 
 augtwelve = DateInfo.create(
-    date: "2019-12-08",
+    date: "2020-11-13",
     arrivals: 180,
     departures: 250,
     performance_YTD: "95% 😊",
@@ -91,7 +91,7 @@ augtwelve = DateInfo.create(
 )
 
 augthirteen = DateInfo.create(
-    date: "2019-13-08",
+    date: "2020-11-14",
     arrivals: 500,
     departures: 250,
     performance_YTD: "95% 😊",
@@ -99,8 +99,8 @@ augthirteen = DateInfo.create(
     rate: "$550"
 )
 
-augfourteen = DateInfo.create(
-    date: "2019-14-08",
+augthirteen = DateInfo.create(
+    date: "2020-11-15",
     arrivals: 500,
     departures: 250,
     performance_YTD: "95% 😊",
@@ -108,8 +108,8 @@ augfourteen = DateInfo.create(
     rate: "$550"
 )
 
-augfitfteen = DateInfo.create(
-    date: "2019-15-08",
+augthirteen = DateInfo.create(
+    date: "2020-11-16",
     arrivals: 500,
     departures: 250,
     performance_YTD: "95% 😊",
@@ -118,7 +118,50 @@ augfitfteen = DateInfo.create(
 )
 
 augsixteen = DateInfo.create(
-    date: "2019-16-08",
+    date: "2020-11-17",
+    arrivals: 500,
+    departures: 250,
+    performance_YTD: "95% 😊",
+    occupancy: "90%",
+    rate: "$550"
+)
+decninth = DateInfo.create(
+    date: "2020-9-15",
+    arrivals: 500,
+    departures: 250,
+    performance_YTD: "95% 😊",
+    occupancy: "90%",
+    rate: "$550"
+)
+
+decfifteen = DateInfo.create(
+    date: "2020-15-15",
+    arrivals: 500,
+    departures: 250,
+    performance_YTD: "95% 😊",
+    occupancy: "90%",
+    rate: "$550"
+)
+decsixteen = DateInfo.create(
+    date: "2020-12-16",
+    arrivals: 500,
+    departures: 250,
+    performance_YTD: "95% 😊",
+    occupancy: "90%",
+    rate: "$550"
+)
+
+decsv = DateInfo.create(
+    date: "2020-12-7",
+    arrivals: 500,
+    departures: 250,
+    performance_YTD: "95% 😊",
+    occupancy: "90%",
+    rate: "$550"
+)
+
+deceight = DateInfo.create(
+    date: "2020-12-20",
     arrivals: 500,
     departures: 250,
     performance_YTD: "95% 😊",
@@ -160,7 +203,7 @@ bob = TeamMember.create(
     password: "123",
 	access: "Executive",
 	birthday: "1990-10-10",
-    start_date: "2008-7-2",
+    start_date: "2020-7-2",
     points: 0,
     department_id: front_office.id
 ) 
@@ -360,7 +403,7 @@ taskone = Task.create(
     certificate: false,
     project: false,
     guest_follow_up: false,
-   # dealdine: null, # for certificate or project
+    date_info_id: augfith.id, 
     status: 0, # for certificate or project
     details: "Guests will be arriving at 7am, ensure that all rooms are pre-keyed"
 )
@@ -372,7 +415,7 @@ tasktwo = Task.create(
     certificate: false,
     project: false,
     guest_follow_up: false,
-   # dealdine: null, # for certificate or project
+    date_info_id: augeight.id, # for certificate or project
     status: 0, # for certificate or project
     details: "Make sure Beyonce has the Grand Suite..."
 )
@@ -397,7 +440,7 @@ taskfour = Task.create(
     certificate: true,
     project: false,
     guest_follow_up: false,
-    date_info_id: augfith.id, # for certificate or project
+    date_info_id: augten.id, # for certificate or project
     status: 0, # for certificate or project
     details: "Project Management"
 )
@@ -409,7 +452,7 @@ taskfive = Task.create(
     certificate: false,
     project: true,
     guest_follow_up: false,
-    date_info_id: augfith.id, # for certificate or project
+    date_info_id: augten.id, # for certificate or project
     status: 0, # for certificate or project
     details: "Increasing Guest Arrival Experience."
 )
@@ -421,7 +464,7 @@ tasksix = Task.create(
     certificate: false,
     project: true,
     guest_follow_up: false,
-    date_info_id: augfith.id, # for certificate or project
+    date_info_id: deceight.id, # for certificate or project
     status: 0, # for certificate or project
     details: "Decrease front desk weight time."
 )
@@ -433,7 +476,7 @@ taskseven = Task.create(
     certificate: false,
     project: true,
     guest_follow_up: false,
-    date_info_id: augnine.id, # for certificate or project
+    date_info_id: augtwelve.id, # for certificate or project
     status: 0, # for certificate or project
     details: "New procedure for check-out."
 )
@@ -445,7 +488,7 @@ taskseven = Task.create(
     certificate: false,
     project: true,
     guest_follow_up: false,
-    date_info_id: augnine.id, # for certificate or project
+    date_info_id: decsv.id, # for certificate or project
     status: 0, # for certificate or project
     details: "Organize the 2019 team bonding event."
 )
@@ -457,7 +500,7 @@ taskseven = Task.create(
     certificate: false,
     project: true,
     guest_follow_up: false,
-    date_info_id: augnine.id, # for certificate or project
+    date_info_id: augthirteen.id, # for certificate or project
     status: 0, # for certificate or project
     details: "Proposal to increase family/children experience."
 )
@@ -469,7 +512,7 @@ taskeight = Task.create(
     certificate: false,
     project: true,
     guest_follow_up: false,
-    date_info_id: augfith.id, # for certificate or project
+    date_info_id: augthirteen.id, # for certificate or project
     status: 0, # for certificate or project
     details: "Switching to luxury linens 1-5 floor."
 )
@@ -481,7 +524,7 @@ tasknine = Task.create(
     certificate: false,
     project: true,
     guest_follow_up: false,
-    date_info_id: augnine.id, # for certificate or project
+    date_info_id: augthirteen.id, # for certificate or project
     status: 0, # for certificate or project
     details: "Switching to luxury linens 6-15 floor."
 )
@@ -493,7 +536,7 @@ tasknine = Task.create(
     certificate: false,
     project: true,
     guest_follow_up: false,
-    date_info_id: augnine.id, # for certificate or project
+    date_info_id: decsixteen.id, # for certificate or project
     status: 0, # for certificate or project
     details: "Switching to luxury linens 15-30 floor."
 )
@@ -505,7 +548,7 @@ tasknine = Task.create(
     certificate: false,
     project: true,
     guest_follow_up: false,
-    date_info_id: augsixteen.id, # for certificate or project
+    date_info_id: decfifteen.id, # for certificate or project
     status: 0, # for certificate or project
     details: "Switching to luxury linens 6-15 floor."
 )
@@ -517,7 +560,7 @@ tasknine = Task.create(
     certificate: false,
     project: true,
     guest_follow_up: false,
-    date_info_id: augsixteen.id, # for certificate or project
+    date_info_id: augtwelve.id, # for certificate or project
     status: 0, # for certificate or project
     details: "Add floral arrangements to 6-15 floor."
 )
@@ -529,7 +572,7 @@ tasknine = Task.create(
     certificate: false,
     project: true,
     guest_follow_up: false,
-    date_info_id: augfith.id, # for certificate or project
+    date_info_id: decninth.id, # for certificate or project
     status: 0, # for certificate or project
     details: "Look over Front Office Labor Hours."
 )
