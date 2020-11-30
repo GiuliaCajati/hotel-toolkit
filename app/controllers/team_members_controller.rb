@@ -25,7 +25,7 @@ class TeamMembersController < ApplicationController
 
     def create
       #create user account 
-      @team_member = TeamMember.new(name: params[:name], password_digest: params[:password], access: params[:access], birthday: params[:birthday], start_date: params[:start_date], points: params[:points],department_id: params[:department_id]) 
+      @team_member = TeamMember.new(name: params[:name], password: params[:password], access: params[:access], birthday: params[:birthday], start_date: params[:start_date], points: params[:points],department_id: params[:department_id]) 
       if @team_member.save 
           #upon success... render json response 
           render json: @team_member.to_json(include: {department: {include: {tasks: {include: [:event]}}}, tasks: {}})
