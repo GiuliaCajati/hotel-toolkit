@@ -58,7 +58,7 @@ ActiveRecord::Schema.define(version: 2020_11_24_015647) do
     t.boolean "project"
     t.boolean "guest_follow_up"
     t.integer "date_info_id"
-    t.integer "status"
+    t.boolean "status"
     t.string "details"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

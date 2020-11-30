@@ -404,7 +404,7 @@ taskone = Task.create(
     project: false,
     guest_follow_up: false,
     date_info_id: augfith.id, 
-    status: 0, # for certificate or project
+    status: false, # for certificate or project
     details: "Guests will be arriving at 7am, ensure that all rooms are pre-keyed"
 )
 
@@ -416,7 +416,7 @@ tasktwo = Task.create(
     project: false,
     guest_follow_up: false,
     date_info_id: augeight.id, # for certificate or project
-    status: 0, # for certificate or project
+    status: false, # for certificate or project
     details: "Make sure Beyonce has the Grand Suite..."
 )
 
@@ -429,7 +429,7 @@ taskthree = Task.create(
     project: false,
     guest_follow_up: false,
     date_info_id: augfith.id, # for certificate or project
-    status: 0, # for certificate or project
+    status: false, # for certificate or project
     details: "Forbes Certificate"
 )
 
@@ -441,7 +441,7 @@ taskfour = Task.create(
     project: false,
     guest_follow_up: false,
     date_info_id: augten.id, # for certificate or project
-    status: 0, # for certificate or project
+    status: false, # for certificate or project
     details: "Project Management"
 )
 
@@ -453,7 +453,7 @@ taskfive = Task.create(
     project: true,
     guest_follow_up: false,
     date_info_id: augten.id, # for certificate or project
-    status: 0, # for certificate or project
+    status: false, # for certificate or project
     details: "Increasing Guest Arrival Experience."
 )
 
@@ -465,7 +465,7 @@ tasksix = Task.create(
     project: true,
     guest_follow_up: false,
     date_info_id: deceight.id, # for certificate or project
-    status: 0, # for certificate or project
+    status: false, # for certificate or project
     details: "Decrease front desk weight time."
 )
 
@@ -477,7 +477,7 @@ taskseven = Task.create(
     project: true,
     guest_follow_up: false,
     date_info_id: augtwelve.id, # for certificate or project
-    status: 0, # for certificate or project
+    status: false, # for certificate or project
     details: "New procedure for check-out."
 )
 
@@ -489,7 +489,7 @@ taskseven = Task.create(
     project: true,
     guest_follow_up: false,
     date_info_id: decsv.id, # for certificate or project
-    status: 0, # for certificate or project
+    status: false, # for certificate or project
     details: "Organize the 2019 team bonding event."
 )
 
@@ -501,7 +501,7 @@ taskseven = Task.create(
     project: true,
     guest_follow_up: false,
     date_info_id: augthirteen.id, # for certificate or project
-    status: 0, # for certificate or project
+    status: false, # for certificate or project
     details: "Proposal to increase family/children experience."
 )
 
@@ -513,7 +513,7 @@ taskeight = Task.create(
     project: true,
     guest_follow_up: false,
     date_info_id: augthirteen.id, # for certificate or project
-    status: 0, # for certificate or project
+    status: false, # for certificate or project
     details: "Switching to luxury linens 1-5 floor."
 )
 
@@ -525,7 +525,7 @@ tasknine = Task.create(
     project: true,
     guest_follow_up: false,
     date_info_id: augthirteen.id, # for certificate or project
-    status: 0, # for certificate or project
+    status: false, # for certificate or project
     details: "Switching to luxury linens 6-15 floor."
 )
 
@@ -537,7 +537,7 @@ tasknine = Task.create(
     project: true,
     guest_follow_up: false,
     date_info_id: decsixteen.id, # for certificate or project
-    status: 0, # for certificate or project
+    status: false, # for certificate or project
     details: "Switching to luxury linens 15-30 floor."
 )
 
@@ -549,7 +549,7 @@ tasknine = Task.create(
     project: true,
     guest_follow_up: false,
     date_info_id: decfifteen.id, # for certificate or project
-    status: 0, # for certificate or project
+    status: false, # for certificate or project
     details: "Switching to luxury linens 6-15 floor."
 )
 
@@ -561,7 +561,7 @@ tasknine = Task.create(
     project: true,
     guest_follow_up: false,
     date_info_id: augtwelve.id, # for certificate or project
-    status: 0, # for certificate or project
+    status: false, # for certificate or project
     details: "Add floral arrangements to 6-15 floor."
 )
 
@@ -573,7 +573,7 @@ tasknine = Task.create(
     project: true,
     guest_follow_up: false,
     date_info_id: decninth.id, # for certificate or project
-    status: 0, # for certificate or project
+    status: false, # for certificate or project
     details: "Look over Front Office Labor Hours."
 )
 

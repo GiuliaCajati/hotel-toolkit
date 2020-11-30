@@ -8,7 +8,7 @@ class CreateTasks < ActiveRecord::Migration[6.0]
       t.boolean :project
       t.boolean :guest_follow_up
       t.integer :date_info_id
-      t.integer :status
+      t.boolean :status
       t.string :details
 
       t.timestamps
