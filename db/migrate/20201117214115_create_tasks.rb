@@ -10,6 +10,7 @@ class CreateTasks < ActiveRecord::Migration[6.0]
       t.integer :date_info_id
       t.boolean :status
       t.string :details
+      t.string :notes
 
       t.timestamps
     end

@@ -60,6 +60,7 @@ ActiveRecord::Schema.define(version: 2020_11_24_015647) do
     t.integer "date_info_id"
     t.boolean "status"
     t.string "details"
+    t.string "notes"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
