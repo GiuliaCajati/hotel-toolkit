@@ -290,7 +290,7 @@ finance = Department.create(
 bob = TeamMember.create(
     name: "Bob",
     password: "123",
-	access: "Executive",
+	access: "Manager",
 	birthday: "1990-10-10",
     start_date: "2020-7-2",
     points: 0,
@@ -300,7 +300,7 @@ bob = TeamMember.create(
 sally = TeamMember.create(
     name: "Sally",
     password: "123",
-	access: "Executive",
+	access: "Manager",
 	birthday: "1988-10-3",
     start_date: "2007-10-3",
     points: 0,
@@ -309,7 +309,7 @@ sally = TeamMember.create(
 jill = TeamMember.create(
     name: "Jill",
     password: "123",
-	access: "Executive",
+	access: "Manager",
 	birthday: "1990-05-3",
     start_date: "2011-10-3",
     points: 0,
@@ -318,7 +318,7 @@ jill = TeamMember.create(
 maria = TeamMember.create(
     name: "Maria",
     password: "123",
-	access: "Executive",
+	access: "Manager",
 	birthday: "1988-12-3",
     start_date: "2016-08-3",
     points: 0,
@@ -328,7 +328,7 @@ maria = TeamMember.create(
 jessica = TeamMember.create(
     name: "Jessica",
     password: "123",
-	access: "Executive",
+	access: "Manager",
 	birthday: "1988-12-3",
     start_date: "2016-08-3",
     points: 0,
@@ -338,7 +338,7 @@ jessica = TeamMember.create(
 tim = TeamMember.create(
     name: "Tim",
     password: "123",
-	access: "Executive",
+	access: "Manager",
 	birthday: "1988-12-3",
     start_date: "2019-10-3",
     points: 0,
@@ -348,7 +348,7 @@ tim = TeamMember.create(
 billy = TeamMember.create(
     name: "Billy",
     password: "123",
-	access: "Executive",
+	access: "Manager",
 	birthday: "1950-02-3",
     start_date: "2015-07-3",
     points: 0,
@@ -358,7 +358,7 @@ billy = TeamMember.create(
 heather = TeamMember.create(
     name: "Heather",
     password: "123",
-	access: "Executive",
+	access: "Manager",
 	birthday: "1975-12-15",
     start_date: "2010-09-3",
     points: 0,
@@ -368,7 +368,7 @@ heather = TeamMember.create(
 sally = TeamMember.create(
     name: "Heather",
     password: "123",
-	access: "Executive",
+	access: "Manager",
 	birthday: "1975-12-15",
     start_date: "2010-09-3",
     points: 0,

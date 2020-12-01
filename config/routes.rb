@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   resources :departments
   resources :team_members # only: [:create]
   post "/login", to: "team_members#login"
+  patch "/add_notes/:id", to: "tasks#add_notes"
  # get "/auto_login", to: "team_members#auto_login"
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
