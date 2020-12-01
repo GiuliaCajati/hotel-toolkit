@@ -24,6 +24,14 @@ dec = DateInfo.create(
     occupancy: "83%",
     rate: "$450"
 )
+decx = DateInfo.create(
+    date: "2020-12-01",
+    arrivals: 180,
+    departures: 155,
+    performance_YTD: "95% 😊",
+    occupancy: "83%",
+    rate: "$450"
+)
 
 decz = DateInfo.create(
     date: "2020-12-03",
@@ -528,7 +536,7 @@ Task.create(
     certificate: false,
     project: false,
     guest_follow_up: false,
-    date_info_id: deca.id, 
+    date_info_id: decx.id, 
     status: false, # for certificate or project
     details: "Guests will be arriving at 7am, ensure that all rooms are pre-keyed. Give Meating planner rooming list."
 )
@@ -583,7 +591,7 @@ Task.create(
 
 Task.create(
     department_id: hr.id,
-    event_id: birthday.id, 
+    # event_id: birthday.id, 
    # team_member_id: null, # for certificate or project
     certificate: false,
     project: false,
