@@ -6,6 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+#decb
 DateEvent.destroy_all
 DateInfo.destroy_all
 Task.destroy_all
@@ -24,26 +25,9 @@ dec = DateInfo.create(
     occupancy: "83%",
     rate: "$450"
 )
-decx = DateInfo.create(
-    date: "2020-12-01",
-    arrivals: 180,
-    departures: 155,
-    performance_YTD: "95% 😊",
-    occupancy: "83%",
-    rate: "$450"
-)
-
-decz = DateInfo.create(
-    date: "2020-12-03",
-    arrivals: 180,
-    departures: 155,
-    performance_YTD: "95% 😊",
-    occupancy: "83%",
-    rate: "$450"
-)
 
 deca = DateInfo.create(
-    date: "2020-12-04",
+    date: "2020-12-02",
     arrivals: 180,
     departures: 155,
     performance_YTD: "95% 😊",
@@ -52,178 +36,215 @@ deca = DateInfo.create(
 )
 
 decb = DateInfo.create(
+    date: "2020-12-03",
+    arrivals: 180,
+    departures: 155,
+    performance_YTD: "95% 😊",
+    occupancy: "83%",
+    rate: "$450"
+)
+
+decc = DateInfo.create(
+    date: "2020-12-04",
+    arrivals: 180,
+    departures: 155,
+    performance_YTD: "95% 😊",
+    occupancy: "83%",
+    rate: "$450"
+)
+
+decd = DateInfo.create(
     date: "2020-12-05",
     arrivals: 180,
     departures: 110,
     performance_YTD: "95% 😊",
     occupancy: "85%",
     rate: "$450"
-)
+)#decb
 
-decc = DateInfo.create(
+dece = DateInfo.create(
     date: "2020-12-06",
     arrivals: 400,
     departures: 250,
     performance_YTD: "95% 😊",
     occupancy: "99%",
     rate: "$450"
-)
+)#decc 
 
-decd = DateInfo.create(
+decf = DateInfo.create(
     date: "2020-12-07",
     arrivals: 180,
     departures: 400,
     performance_YTD: "95% 😊",
     occupancy: "78%",
     rate: "$450"
-)
+)#decd
 
 
-dece = DateInfo.create(
+decg = DateInfo.create(
     date: "2020-12-08",
     arrivals: 780,
     departures: 250,
     performance_YTD: "95% 😊",
     occupancy: "97%",
     rate: "$450"
-)
+)#dece
 
-decf = DateInfo.create(
+dech = DateInfo.create(
     date: "2020-12-09",
     arrivals: 180,
     departures: 250,
     performance_YTD: "95% 😊",
     occupancy: "80%",
     rate: "$450"
-)
+)#decf
 
-decg = DateInfo.create(
+deci = DateInfo.create(
     date: "2020-12-10",
     arrivals: 180,
     departures: 250,
     performance_YTD: "95% 😊",
     occupancy: "80%",
     rate: "$550"
-)
+)#decg
 
-dech = DateInfo.create(
+decj = DateInfo.create(
     date: "2020-12-11",
     arrivals: 180,
     departures: 250,
     performance_YTD: "95% 😊",
     occupancy: "80%",
     rate: "$550"
-)
+)#dech
 
-deci = DateInfo.create(
+deck = DateInfo.create(
     date: "2020-12-12",
     arrivals: 500,
     departures: 250,
     performance_YTD: "95% 😊",
     occupancy: "90%",
     rate: "$550"
-)
+)#deci
 
-decj = DateInfo.create(
+decl = DateInfo.create(
     date: "2020-12-13",
     arrivals: 500,
     departures: 250,
     performance_YTD: "95% 😊",
     occupancy: "90%",
     rate: "$550"
-)
+)#decj
 
-deck = DateInfo.create(
+decm = DateInfo.create(
     date: "2020-12-14",
     arrivals: 500,
     departures: 250,
     performance_YTD: "95% 😊",
     occupancy: "90%",
     rate: "$550"
-)
+)#deck
 
-decl = DateInfo.create(
+decn = DateInfo.create(
     date: "2020-12-15",
     arrivals: 500,
     departures: 250,
     performance_YTD: "95% 😊",
     occupancy: "90%",
     rate: "$550"
-)
-decm = DateInfo.create(
+)#decl
+
+deco = DateInfo.create(
     date: "2020-12-16",
     arrivals: 500,
     departures: 250,
     performance_YTD: "95% 😊",
     occupancy: "90%",
     rate: "$550"
-)
+)#decm
 
-decn = DateInfo.create(
+decp = DateInfo.create(
     date: "2020-12-17",
     arrivals: 500,
     departures: 250,
     performance_YTD: "95% 😊",
     occupancy: "90%",
     rate: "$550"
-)
+)#decn
 
-deco = DateInfo.create(
+decq = DateInfo.create(
     date: "2020-12-18",
     arrivals: 500,
     departures: 250,
     performance_YTD: "95% 😊",
     occupancy: "90%",
     rate: "$550"
-)
+)#deco
 
-decp = DateInfo.create(
+decr = DateInfo.create(
     date: "2020-12-19",
     arrivals: 500,
     departures: 250,
     performance_YTD: "95% 😊",
     occupancy: "90%",
     rate: "$550"
-)
+)#decp
 
-decq = DateInfo.create(
+decs = DateInfo.create(
     date: "2020-12-20",
     arrivals: 500,
     departures: 250,
     performance_YTD: "95% 😊",
     occupancy: "90%",
     rate: "$550"
-)
+)#decq
 
-decr = DateInfo.create(
+dect = DateInfo.create(
     date: "2020-12-21",
     arrivals: 500,
     departures: 250,
     performance_YTD: "95% 😊",
     occupancy: "90%",
     rate: "$550"
-)
+)#decr
 
-decs = DateInfo.create(
+decu = DateInfo.create(
     date: "2020-12-22",
     arrivals: 500,
     departures: 250,
     performance_YTD: "95% 😊",
     occupancy: "90%",
     rate: "$550"
-)
+)#decs
 
-dect = DateInfo.create(
+decv = DateInfo.create(
     date: "2020-12-23",
     arrivals: 500,
     departures: 250,
     performance_YTD: "95% 😊",
     occupancy: "90%",
     rate: "$550"
-)
+)#dect
 
-decu = DateInfo.create(
+decw = DateInfo.create(
     date: "2020-12-25",
+    arrivals: 500,
+    departures: 250,
+    performance_YTD: "95% 😊",
+    occupancy: "90%",
+    rate: "$550"
+)#decu
+
+decx = DateInfo.create(
+    date: "2020-12-26",
+    arrivals: 500,
+    departures: 250,
+    performance_YTD: "95% 😊",
+    occupancy: "90%",
+    rate: "$550"
+)#decv
+
+decy = DateInfo.create(
+    date: "2020-12-27",
     arrivals: 500,
     departures: 250,
     performance_YTD: "95% 😊",
@@ -231,8 +252,35 @@ decu = DateInfo.create(
     rate: "$550"
 )
 
-decv = DateInfo.create(
-    date: "2020-12-26",
+decz = DateInfo.create(
+    date: "2020-12-28",
+    arrivals: 500,
+    departures: 250,
+    performance_YTD: "95% 😊",
+    occupancy: "90%",
+    rate: "$550"
+)
+
+decaa = DateInfo.create(
+    date: "2020-12-29",
+    arrivals: 500,
+    departures: 250,
+    performance_YTD: "95% 😊",
+    occupancy: "90%",
+    rate: "$550"
+)
+
+decab = DateInfo.create(
+    date: "2020-12-30",
+    arrivals: 500,
+    departures: 250,
+    performance_YTD: "95% 😊",
+    occupancy: "90%",
+    rate: "$550"
+)
+
+decac = DateInfo.create(
+    date: "2020-12-31",
     arrivals: 500,
     departures: 250,
     performance_YTD: "95% 😊",
@@ -241,7 +289,7 @@ decv = DateInfo.create(
 )
 
 jan = DateInfo.create(
-    date: "2020-01-10",
+    date: "2021-01-10",
     arrivals: 500,
     departures: 250,
     performance_YTD: "95% 😊",
@@ -250,7 +298,7 @@ jan = DateInfo.create(
 )
 
 jana = DateInfo.create(
-    date: "2020-01-20",
+    date: "2021-01-20",
     arrivals: 500,
     departures: 250,
     performance_YTD: "95% 😊",
@@ -287,8 +335,8 @@ finance = Department.create(
 	name: "Finance"
 )
 ###############TeamMembers#############
-bob = TeamMember.create(
-    name: "Bob",
+giulia = TeamMember.create(
+    name: "Giulia",
     password: "123",
 	access: "Manager",
 	birthday: "1990-10-10",
@@ -383,6 +431,12 @@ dr = Event.create(
     importance: "Highly"
 )
 
+holiday = Event.create(
+    name: "Holiday Party",
+    number_of_attendees: 560,
+    importance: "Highly"
+)
+
 g = Event.create(
     name: "G8 Summit",
     number_of_attendees: 50,
@@ -402,50 +456,27 @@ birthday = Event.create(
 )
 
 emmys = Event.create(
-    name: "Emmys",
+    name: "Emmy's",
     number_of_attendees: 1500,
     importance: "Highly"
 )
 
 ###############DateEvent#############
+holiday
+
+DateEvent.create(
+    date_info_id: decx.id,
+    event_id: holiday.id,
+    arrivals: 0,
+    in_house: 0,
+    departures: 0
+)
 
 DateEvent.create(
     date_info_id: decg.id,
     event_id: g.id,
     arrivals: 1000,
     in_house: 2,
-    departures: 0
-)
-
-DateEvent.create(
-    date_info_id: decz.id,
-    event_id: comic_con.id,
-    arrivals: 0,
-    in_house: 1200,
-    departures: 2
-)
-
-DateEvent.create(
-    date_info_id: deca.id,
-    event_id: comic_con.id,
-    arrivals: 1000,
-    in_house: 2,
-    departures: 0
-)
-
-DateEvent.create(
-    date_info_id: decb.id,
-    event_id: comic_con.id,
-    arrivals: 200,
-    in_house: 1002,
-    departures: 0
-)
-
-DateEvent.create(
-    date_info_id: decc.id,
-    event_id: comic_con.id,
-    arrivals: 0,
-    in_house: 1202,
     departures: 0
 )
 
@@ -457,10 +488,43 @@ DateEvent.create(
     departures: 2
 )
 
+DateEvent.create(
+    date_info_id: decc.id,
+    event_id: comic_con.id,
+    arrivals: 1000,
+    in_house: 2,
+    departures: 0
+)
+
+DateEvent.create(
+    date_info_id: decd.id,
+    event_id: comic_con.id,
+    arrivals: 200,
+    in_house: 1002,
+    departures: 0
+)
 
 
 DateEvent.create(
-    date_info_id: decz.id,
+    date_info_id: decd.id,
+    event_id: comic_con.id,
+    arrivals: 0,
+    in_house: 1200,
+    departures: 2
+)
+
+DateEvent.create(
+    date_info_id: decb.id,
+    event_id: dr.id,
+    arrivals: 100,
+    in_house: 950,
+    departures: 250
+)
+
+
+
+DateEvent.create(
+    date_info_id: decb.id,
     event_id: birthday.id,
     arrivals: 1000,
     in_house: 950,
@@ -468,7 +532,7 @@ DateEvent.create(
 )
 
 DateEvent.create(
-    date_info_id: deca.id,
+    date_info_id: decc.id,
     event_id: birthday.id,
     arrivals: 0,
     in_house: 710,
@@ -476,7 +540,7 @@ DateEvent.create(
 )
 
 DateEvent.create(
-    date_info_id: decb.id,
+    date_info_id: decd.id,
     event_id: birthday.id,
     arrivals: 0,
     in_house: 10,
@@ -484,7 +548,7 @@ DateEvent.create(
 )
 
 DateEvent.create(
-    date_info_id: decc.id,
+    date_info_id: dece.id,
     event_id: birthday.id,
     arrivals: 0,
     in_house: 0,
@@ -514,13 +578,21 @@ DateEvent.create(
     in_house: 950,
     departures: 250
 )
+
+DateEvent.create(
+    date_info_id: decg.id,
+    event_id: emmys.id,
+    arrivals: 1000,
+    in_house: 950,
+    departures: 250
+)
 ###############Task#############
 
 
 Task.create(
     # department_id: front_office.id,
     # event_id: null, 
-    team_member_id: bob.id, # for certificate or project
+    team_member_id: giulia.id, # for certificate or project
     certificate: false,
     project: true,
     guest_follow_up: false,
@@ -536,7 +608,7 @@ Task.create(
     certificate: false,
     project: false,
     guest_follow_up: false,
-    date_info_id: decx.id, 
+    date_info_id: dec.id, 
     status: false, # for certificate or project
     details: "Guests will be arriving at 7am, ensure that all rooms are pre-keyed. Give Meating planner rooming list."
 )
@@ -560,7 +632,7 @@ Task.create(
     certificate: false,
     project: false,
     guest_follow_up: false,
-    date_info_id: decz.id, # for certificate or project
+    date_info_id: decd.id, # for certificate or project
     status: false, # for certificate or project
     details: "Make sure Beyonce has the Grand Suite."
 )
@@ -568,11 +640,11 @@ Task.create(
 Task.create(
     # department_id: front_office.id,
     # event_id: birthday.id, 
-   team_member_id: bob.id, # for certificate or project
+   team_member_id: giulia.id, # for certificate or project
     certificate: false,
     project: false,
     guest_follow_up: true,
-    date_info_id: decz.id, # for certificate or project
+    date_info_id: decd.id, # for certificate or project
     status: false, # for certificate or project
     details: "Mr.Smith called at 11pm last night stating that the guest nextdoor woke him up. No compinsation was offered at this time, please follow-up."
 )
@@ -605,7 +677,7 @@ Task.create(
 Task.create(
     #department_id: front_office.id,
     #event_id: birthday.id, 
-    team_member_id: bob.id, # for certificate or project
+    team_member_id: giulia.id, # for certificate or project
     certificate: true,
     project: false,
     guest_follow_up: false,
@@ -617,7 +689,7 @@ Task.create(
 Task.create(
     #department_id: front_office.id,
     #event_id: birthday.id, 
-    team_member_id: bob.id, # for certificate or project
+    team_member_id: giulia.id, # for certificate or project
     certificate: true,
     project: false,
     guest_follow_up: false,
@@ -629,7 +701,7 @@ Task.create(
 Task.create(
     #department_id: front_office.id,
     #event_id: birthday.id, 
-    team_member_id: bob.id, # for certificate or project
+    team_member_id: giulia.id, # for certificate or project
     certificate: false,
     project: true,
     guest_follow_up: false,
@@ -641,7 +713,7 @@ Task.create(
 Task.create(
     #department_id: front_office.id,
     #event_id: birthday.id, 
-    team_member_id: bob.id, # for certificate or project
+    team_member_id: giulia.id, # for certificate or project
     certificate: false,
     project: true,
     guest_follow_up: false,
@@ -653,7 +725,7 @@ Task.create(
 Task.create(
     #department_id: front_office.id,
     #event_id: birthday.id, 
-    team_member_id: bob.id, # for certificate or project
+    team_member_id: giulia.id, # for certificate or project
     certificate: false,
     project: true,
     guest_follow_up: false,
@@ -665,7 +737,7 @@ Task.create(
 Task.create(
     #department_id: front_office.id,
     #event_id: birthday.id, 
-    team_member_id: bob.id, # for certificate or project
+    team_member_id: giulia.id, # for certificate or project
     certificate: false,
     project: true,
     guest_follow_up: false,
@@ -677,7 +749,7 @@ Task.create(
 Task.create(
     #department_id: front_office.id,
     #event_id: birthday.id, 
-    team_member_id: bob.id, # for certificate or project
+    team_member_id: giulia.id, # for certificate or project
     certificate: false,
     project: true,
     guest_follow_up: false,
@@ -689,7 +761,7 @@ Task.create(
 Task.create(
     #department_id: front_office.id,
     #event_id: birthday.id, 
-    team_member_id: bob.id, # for certificate or project
+    team_member_id: giulia.id, # for certificate or project
     certificate: false,
     project: true,
     guest_follow_up: false,
@@ -782,7 +854,19 @@ Task.create(
     details: "G8 is a hotel buyout, ensure only G8 members have reservations."
 )
 
+holiday
 
+Task.create(
+    department_id: catering.id,
+    event_id: holiday.id, 
+    # team_member_id: maria.id, # for certificate or project
+    certificate: false,
+    project: true,
+    guest_follow_up: false,
+    date_info_id: deck.id, # for certificate or project
+    status: false, # for certificate or project
+    details: "Internal Event. Happy Holida's Everyone!🎄🕎"
+)
 
 
 
@@ -791,31 +875,49 @@ Task.create(
 vipone = Vip.create(
     name: "Beyonce",
     event_id: birthday.id,
-    show_on_daily: "Beyonce will be arriving at 7pm.",
+    show_on_daily: "Beyonce and Jay-Z and will be arriving at 7pm.",
     level: "High",
-    img_url: "https://i.imgur.com/D0qvUSk.jpg"
+    img_url: "https://i.imgur.com/9ECnme4.jpg"
+)
+
+viptwo = Vip.create(
+    name: "Jay-Z",
+    event_id: birthday.id,
+    show_on_daily: "Beyonce and Jay-Z will be arriving at 7pm.",
+    level: "High",
+    img_url: "https://i.imgur.com/WvdL9AU.jpg"
 )
 
 
 
 ########VIPDATE##############################
 
-viponearvl = VipDate.create(
-    date_info_id: deca.id,
+VipDate.create(
+    date_info_id: decd.id,
     vip_id:vipone.id,
     arrival: true,
     departure: false 
 )
 
-viponearvl = VipDate.create(
-    date_info_id: decz.id,
+VipDate.create(
+    date_info_id: decf.id,
     vip_id:vipone.id,
     arrival: false,
     departure: true 
 )
 
-
-
+VipDate.create(
+    date_info_id: decd.id,
+    vip_id:viptwo.id,
+    arrival: true,
+    departure: false 
+)
+VipDate.create(
+    date_info_id: decf.id,
+    vip_id:viptwo.id,
+    arrival: false,
+    departure: true 
+)
 
 
 
