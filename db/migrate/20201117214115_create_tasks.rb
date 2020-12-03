@@ -9,6 +9,7 @@ class CreateTasks < ActiveRecord::Migration[6.0]
       t.boolean :guest_follow_up
       t.integer :date_info_id
       t.boolean :status
+      t.string :time
       t.string :details
       t.string :notes
 

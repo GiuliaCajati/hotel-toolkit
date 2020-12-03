@@ -19,47 +19,47 @@ Vip.destroy_all
 ###############DateInfo#############
 dec = DateInfo.create(
     date: "2020-12-01",
-    arrivals: 180,
-    departures: 155,
-    performance_YTD: "95% 😊",
-    occupancy: "83%",
-    rate: "$450"
+    arrivals: 250,
+    departures: 200,
+    performance_YTD: "99% 😊",
+    occupancy: "88%",
+    rate: "$500"
 )
 
 deca = DateInfo.create(
     date: "2020-12-02",
-    arrivals: 180,
-    departures: 155,
-    performance_YTD: "95% 😊",
-    occupancy: "83%",
-    rate: "$450"
+    arrivals: 250,
+    departures: 200,
+    performance_YTD: "99% 😊",
+    occupancy: "88%",
+    rate: "$500"
 )
 
 decb = DateInfo.create(
     date: "2020-12-03",
-    arrivals: 180,
-    departures: 155,
-    performance_YTD: "95% 😊",
-    occupancy: "83%",
-    rate: "$450"
+    arrivals: 250,
+    departures: 200,
+    performance_YTD: "99% 😊",
+    occupancy: "88%",
+    rate: "$500"
 )
 
 decc = DateInfo.create(
     date: "2020-12-04",
-    arrivals: 180,
-    departures: 155,
-    performance_YTD: "95% 😊",
-    occupancy: "83%",
-    rate: "$450"
+    arrivals: 250,
+    departures: 200,
+    performance_YTD: "99% 😊",
+    occupancy: "88%",
+    rate: "$500"
 )
 
 decd = DateInfo.create(
     date: "2020-12-05",
-    arrivals: 180,
-    departures: 110,
-    performance_YTD: "95% 😊",
-    occupancy: "85%",
-    rate: "$450"
+    arrivals: 250,
+    departures: 200,
+    performance_YTD: "99% 😊",
+    occupancy: "88%",
+    rate: "$500"
 )#decb
 
 dece = DateInfo.create(
@@ -307,37 +307,45 @@ jana = DateInfo.create(
 )
 
 ###############Departments#############
+catering = Department.create(
+	name: "Catering & Events"
+) 
+engineering = Department.create(
+	name: "Engineering"
+)
+finance = Department.create(
+	name: "Finance"
+)
+front_office = Department.create(
+	name: "Front Office"
+) 
+housekeeping = Department.create(
+	name: "Housekeeping"
+) 
+hr = Department.create(
+	name: "Human Resources"
+)
 sales = Department.create(
 	name: "Sales"
 ) 
 
-front_office = Department.create(
-	name: "Front Office"
+security = Department.create(
+	name: "Security"
 ) 
 
-housekeeping = Department.create(
-	name: "Housekeeping"
-) 
 
-catering = Department.create(
-	name: "Catering & Events"
-) 
 
-engineering = Department.create(
-	name: "Engineering"
-)
 
-hr = Department.create(
-	name: "Human Resources"
-)
 
-finance = Department.create(
-	name: "Finance"
-)
+
+
+
+
+
 ###############TeamMembers#############
 giulia = TeamMember.create(
     name: "Giulia",
-    password: "123",
+    password: "22Star!!",
 	access: "Manager",
 	birthday: "1990-10-10",
     start_date: "2020-7-2",
@@ -413,14 +421,50 @@ heather = TeamMember.create(
     department_id: sales.id
 ) 
 
-sally = TeamMember.create(
-    name: "Heather",
+martha = TeamMember.create(
+    name: "Sally",
     password: "123",
 	access: "Manager",
-	birthday: "1975-12-15",
-    start_date: "2010-09-3",
+	birthday: "1988-10-3",
+    start_date: "2007-10-3",
     points: 0,
-    department_id: housekeeping.id
+    department_id: hr.id
+) 
+paul = TeamMember.create(
+    name: "Paul",
+    password: "123",
+	access: "Manager",
+	birthday: "1988-10-3",
+    start_date: "2007-10-3",
+    points: 0,
+    department_id: catering.id
+) 
+george= TeamMember.create(
+    name: "George",
+    password: "123",
+	access: "Manager",
+	birthday: "1988-10-3",
+    start_date: "2007-10-3",
+    points: 0,
+    department_id: catering.id
+) 
+frank= TeamMember.create(
+    name: "George",
+    password: "123",
+	access: "Manager",
+	birthday: "1988-10-3",
+    start_date: "2007-10-3",
+    points: 0,
+    department_id: catering.id
+) 
+adam= TeamMember.create(
+    name: "Adam",
+    password: "123",
+	access: "Manager",
+	birthday: "1988-10-3",
+    start_date: "2007-10-3",
+    points: 0,
+    department_id: catering.id
 ) 
 
 ###############Events#############
@@ -496,22 +540,6 @@ DateEvent.create(
     departures: 0
 )
 
-DateEvent.create(
-    date_info_id: decd.id,
-    event_id: comic_con.id,
-    arrivals: 200,
-    in_house: 1002,
-    departures: 0
-)
-
-
-DateEvent.create(
-    date_info_id: decd.id,
-    event_id: comic_con.id,
-    arrivals: 0,
-    in_house: 1200,
-    departures: 2
-)
 
 DateEvent.create(
     date_info_id: decb.id,
@@ -555,13 +583,6 @@ DateEvent.create(
     departures: 10
 )
 
-DateEvent.create(
-    date_info_id: decd.id,
-    event_id: emmys.id,
-    arrivals: 1000,
-    in_house: 950,
-    departures: 250
-)
 
 DateEvent.create(
     date_info_id: dece.id,
@@ -588,7 +609,7 @@ DateEvent.create(
 )
 ###############Task#############
 
-
+## time
 Task.create(
     # department_id: front_office.id,
     # event_id: null, 
@@ -608,9 +629,21 @@ Task.create(
     certificate: false,
     project: false,
     guest_follow_up: false,
-    date_info_id: dec.id, 
+    date_info_id: decb.id, 
     status: false, # for certificate or project
     details: "Guests will be arriving at 7am, ensure that all rooms are pre-keyed. Give Meating planner rooming list."
+)
+
+Task.create(
+    department_id: engineering.id,
+    event_id: comic_con.id, 
+    #team_member_id: tim.id, # for certificate or project
+    certificate: false,
+    project: false,
+    guest_follow_up: false,
+    date_info_id: decb.id, 
+    status: false, # for certificate or project
+    details: "Ensure meeting room temperature is 72°F."
 )
 
 Task.create(
@@ -620,9 +653,32 @@ Task.create(
     certificate: false,
     project: false,
     guest_follow_up: false,
-    date_info_id: dec.id, 
+    date_info_id: decb.id, 
     status: false, # for certificate or project
     details: "Assign all VIPs to Statue of Liberty facing rooms."
+)
+Task.create(
+    department_id: housekeeping.id,
+    event_id: birthday.id, 
+   # team_member_id: null, # for certificate or project
+    certificate: false,
+    project: false,
+    guest_follow_up: false,
+    date_info_id: decd.id, # for certificate or project
+    status: false, # for certificate or project
+    details: "Provide Turndown Service for the Grand Suite at 9pm."
+)
+
+Task.create(
+    department_id: engineering.id,
+    event_id: birthday.id, 
+   # team_member_id: null, # for certificate or project
+    certificate: false,
+    project: false,
+    guest_follow_up: false,
+    date_info_id: decd.id, # for certificate or project
+    status: false, # for certificate or project
+    details: "Ensure Grand Suite temperature is 75°F."
 )
 
 Task.create(
@@ -634,7 +690,18 @@ Task.create(
     guest_follow_up: false,
     date_info_id: decd.id, # for certificate or project
     status: false, # for certificate or project
-    details: "Make sure Beyonce has the Grand Suite."
+    details: "Make sure the Grand Suite is assigned to Mrs.Knowles and Mr.Carter."
+)
+Task.create(
+    department_id: housekeeping.id,
+    event_id: birthday.id, 
+   # team_member_id: null, # for certificate or project
+    certificate: false,
+    project: false,
+    guest_follow_up: true,
+    date_info_id: decc.id, # for certificate or project
+    status: false, # for certificate or project
+    details: "Make sure flowers are placed in Grand Suite for Mrs. Knowles and Mr.Carter."
 )
 
 Task.create(
@@ -645,21 +712,10 @@ Task.create(
     project: false,
     guest_follow_up: true,
     date_info_id: decd.id, # for certificate or project
-    status: false, # for certificate or project
+    status: true, # for certificate or project
     details: "Mr.Smith called at 11pm last night stating that the guest nextdoor woke him up. No compinsation was offered at this time, please follow-up."
 )
 
-Task.create(
-    department_id: housekeeping.id,
-    event_id: birthday.id, 
-   # team_member_id: null, # for certificate or project
-    certificate: false,
-    project: false,
-    guest_follow_up: false,
-    date_info_id: dec.id, # for certificate or project
-    status: false, # for certificate or project
-    details: "Make sure flowers are placed in Grand Suite for Beyonce."
-)
 
 Task.create(
     department_id: hr.id,
@@ -669,7 +725,7 @@ Task.create(
     project: false,
     guest_follow_up: false,
     date_info_id: dec.id, # for certificate or project
-    status: false, # for certificate or project
+    status: true, # for certificate or project
     details: "Ensure all managers, have had teams complete Team Member Survey, before month end."
 )
 
@@ -873,17 +929,17 @@ Task.create(
 ########VIP################################
 
 vipone = Vip.create(
-    name: "Beyonce",
+    name: "Beyoncé Knowles",
     event_id: birthday.id,
-    show_on_daily: "Beyonce and Jay-Z and will be arriving at 7pm.",
+    show_on_daily: "Mrs.Knowles and Mr.Carter will be arriving at 7pm, Event Manager will greet them at the door.",
     level: "High",
-    img_url: "https://i.imgur.com/9ECnme4.jpg"
+    img_url: "https://i.imgur.com/BbhOVfG.jpg"
 )
 
 viptwo = Vip.create(
-    name: "Jay-Z",
+    name: "Shawn Carter",
     event_id: birthday.id,
-    show_on_daily: "Beyonce and Jay-Z will be arriving at 7pm.",
+    show_on_daily: "Mrs.Knowles and Mr.Carter will be arriving at 7pm, Event Manager will greet them at the door.",
     level: "High",
     img_url: "https://i.imgur.com/WvdL9AU.jpg"
 )
