@@ -440,7 +440,7 @@ paul = TeamMember.create(
     department_id: catering.id
 ) 
 george= TeamMember.create(
-    name: "George",
+    name: "Gerry",
     password: "123",
 	access: "Manager",
 	birthday: "1988-10-3",
@@ -630,7 +630,7 @@ Task.create(
     project: false,
     guest_follow_up: false,
     date_info_id: decb.id, 
-    status: false, # for certificate or project
+    status: true, # for certificate or project
     details: "Guests will be arriving at 7am, ensure that all rooms are pre-keyed. Give Meating planner rooming list."
 )
 
@@ -654,7 +654,7 @@ Task.create(
     project: false,
     guest_follow_up: false,
     date_info_id: decb.id, 
-    status: false, # for certificate or project
+    status: true, # for certificate or project
     details: "Assign all VIPs to Statue of Liberty facing rooms."
 )
 Task.create(
@@ -712,7 +712,7 @@ Task.create(
     project: false,
     guest_follow_up: true,
     date_info_id: decd.id, # for certificate or project
-    status: true, # for certificate or project
+    status: false, # for certificate or project
     details: "Mr.Smith called at 11pm last night stating that the guest nextdoor woke him up. No compinsation was offered at this time, please follow-up."
 )
 
