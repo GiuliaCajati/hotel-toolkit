@@ -1,5 +1,11 @@
 class ApplicationController < ActionController::API
     before_action :authorized
+    # JS frontend request 
+    #headers: {
+    #     'Authorization': `Bearer ${localStorage.getItem('token')}`
+    #  }
+    # Authorization: Bearer <token>
+   
     def authorized
        render json: { message: 'Please log in' }, 
           status: :unauthorized unless logged_in?
@@ -17,7 +23,7 @@ class ApplicationController < ActionController::API
        if auth_header()
           token = auth_header.split(' ')[1]
           begin
-             JWT.decode(token, '<secret_key_here>', true, 
+             JWT.decode(token, '<secret_key_here>',  #store your key in a .env
                 algorithm: 'HS256')
           rescue JWT::DecodeError
              nil
