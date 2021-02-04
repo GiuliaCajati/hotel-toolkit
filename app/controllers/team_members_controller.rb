@@ -26,15 +26,23 @@ class TeamMembersController < ApplicationController
     def create
       #create user account 
       @team_member = TeamMember.new(name: params[:name], password: params[:password], access: params[:access], birthday: params[:birthday], start_date: params[:start_date], points: params[:points],department_id: params[:department_id]) 
-      if @team_member.save 
+      if @user.valid?
+      #if @team_member.save  #previous
           #upon success... render json response 
-          render json: @team_member.to_json(include: {department: {include: {tasks: {include:[:event]}}}, tasks: {include:[:department]}})
+          render json: @team_member.to_json(include: {department: {include: {tasks: {include:[:event]}}}, tasks: {include:[:department]}}),
+          status: :created #authentication
       else 
           #upon failure... render json response 
-          render json: {message: "This user is not authenticated"}
+          render json: {message: "This user is not authenticated"},
+          status: :not_acceptable #authentication
       end
     end 
 
+ 
+  #  private
+  #  def user_params
+  #     params.require(:user).permit(:username, :name, :password)
+  #  end
   
 
     # t.string "name"
