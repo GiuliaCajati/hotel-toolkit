@@ -14,7 +14,7 @@ class TeamMembersController < ApplicationController
     
 
     def index 
-      @team_members = TeamMember.all
+      @set-up  = TeamMember.all
       render json: @team_members.to_json(include: {department: {include: {tasks: {include:[:event]}}}, tasks: {include:[:department]}})
     end 
 
