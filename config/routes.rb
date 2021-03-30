@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root "application#index"
+  #root "application#index"
   resources :vips
   resources :vip_dates
   resources :date_infos
